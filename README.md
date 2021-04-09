@@ -1,2 +1,4 @@
-# hextile
-Go Hex map utility library
+HexTile
+=======
+
+Library for building and managing tiles
