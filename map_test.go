@@ -5,25 +5,6 @@ import (
 	"testing"
 )
 
-func TestBasic(t *testing.T) {
-	tests := []struct {
-		a, b, c int
-	}{
-		{1, 0, 1},
-		{1, 1, 2},
-	}
-
-	for i, x := range tests {
-		tt := x
-		t.Run(fmt.Sprintf("test%v", i), func(t *testing.T) {
-			c := tt.a + tt.b
-			if c != tt.c {
-				t.Errorf("something is seriously wrong, %v+%v != %v, got %v instead", tt.a, tt.b, tt.c, c)
-			}
-		})
-	}
-}
-
 func TestRectMap(t *testing.T) {
 	m := NewRectangleMap(5, 10)
 
